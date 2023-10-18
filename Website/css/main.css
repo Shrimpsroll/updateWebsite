@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Create a header with a background color and text centered */
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 100px 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* Style the header text */
+header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Create a navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Highlight color on hover */
+}
+
+/* Create a main content section */
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Style headings */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Style paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#headerImage {
+    height:50vh;
+    width: 55vw;
+    padding-bottom: 10px;
+}
+/* Lists */
+
+/* styles.css */
+
+/* Style unordered (bulleted) lists */
+ul.list {
+    list-style: none; /* Remove default bullets */
+    margin: 0; /* Remove default margin */
+    padding: 5px; /* Remove default padding */
+}
+
+/* Style list items */
+li.list {
+    margin-bottom: 10px; /* Add spacing between list items */
+    padding-left: 20px; /* Add left padding for custom bullet */
+    position: relative;
+}
+
+/* Custom bullet for unordered lists */
+li.list::before {
+    content: "\2022"; /* Unicode bullet character */
+    position: absolute;
+    left: 0;
+    color: #3498db; /* Bullet color */
+}
+
+/* Style ordered (numbered) lists */
+ol.list {
+    list-style: none; /* Remove default numbers */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style list items in ordered lists */
+ol.list li.list {
+    margin-bottom: 10px; /* Add spacing between list items */
+    padding-left: 20px; /* Add left padding for custom numbers */
+    position: relative;
+}
+
+/* Custom numbering for ordered lists */
+ol.list li.list::before {
+    content: counter(list-item) "."; /* Use a counter for custom numbers */
+    counter-increment: list-item; /* Increment the counter for each item */
+    position: absolute;
+    left: 0;
+    color: #e74c3c; /* Number color */
+}
+
+
+/* You can further customize colors, fonts, and other styles to match your design. */
+
+/* Style the footer */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    text-align: center; /* Center-align text */
+    padding: 15px; /* Add padding to top and bottom */
+    padding-bottom: 1px;
+}
+
+/* Style the footer links */
+footer a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 10px; /* Add spacing between links */
+}
+
+/* Style the footer links on hover */
+footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.photo {
+    width: 30vw;
+    height: 27.5vh;
+}
